@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS_PARCIJALNI</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js" type="module"></script>
+  </head>
+  <body>
     <section class="table-renderer">
-        <h2 class="title">Polaznici</h2>
-        <input type="text" class="input">
-        <table class="table">
-            <tr class="table__id">
-                <th>ID</th>
-                <th>Name</th>
-                <th>Surname</th>
-                <th>Age</th>
-            </tr>
-        </table>
+      <h2 class="title">Polaznici</h2>
+      <input type="text" class="input" />
+      <p class="alert"></p>
+      <table class="table">
+        <thead>
+          <tr class="t-head">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody class="table-body"></tbody>
+      </table>
     </section>
-</body>
-<script src="script.js" type="modules"></script>
+  </body>
 </html>

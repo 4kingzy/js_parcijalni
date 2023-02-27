@@ -25,3 +25,13 @@ input {
   background-color: #167fd4;
   color: white;
 }
+
+.alert {
+  display: none;
+  text-align: center;
+  margin: 0 auto;
+  color: red;
+}
+.alert.alert_visible {
+  display: block;
+}
