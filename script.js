@@ -1,14 +1,13 @@
-import { attendees } from "./data.js";
 import { renderer } from "./renderer.js";
-const inputEl = document.querySelector(".input");
+const inputEl = document.querySelector("input");
 
 renderer(attendees);
 
-inputEl.addEventListener("keyup", (event) => {
-  const term = event.target.value;
+inputEl.addEventListener("input", (event) => {
+  const result = attendees.filter((attendee) =>
+    attendee.name.toLowerCase().includes(event.target.value.toLowerCase())
+  );
 
-  const filter = attendees.filter((attendee) => {
-    attendee.name.toLowerCase().includes(term.toLowerCase());
-  });
-  renderer(filter, "There is nothing here");
+  renderer(result);
 });
+
